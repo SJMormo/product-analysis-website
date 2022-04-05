@@ -26,14 +26,14 @@ const Home = () => {
                     <h1 className="mt-3">Explore</h1>
                 </div>
                 <div className="col-md-4 col-sm-12">
-                    <img src={img} alt="" />
+                    <img className='img-fluid' src={img} alt="" />
                 </div>
             </div >
             <div className='pb-5'>
                 <h3 className="mt-5 text-center">Customer Reviews</h3>
                 <Row sm={1} md={3} className="g-4 w-75 mx-auto">
                     {
-                        reviews.slice(3).map(review =>
+                        reviews.slice(0, 3).map(review =>
                             <Review
                                 key={review.id}
                                 review={review}

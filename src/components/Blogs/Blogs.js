@@ -3,7 +3,8 @@ import { Accordion } from 'react-bootstrap';
 
 const Blogs = () => {
     return (
-        <Accordion defaultActiveKey="0">
+        <Accordion className='w-75 mx-auto mt-4' defaultActiveKey="0">
+            <h1 className="text-center mb-5">Questions</h1>
             <Accordion.Item eventKey="0">
                 <Accordion.Header>What is Context API?</Accordion.Header>
                 <Accordion.Body>
