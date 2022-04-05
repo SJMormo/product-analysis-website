@@ -1,9 +1,10 @@
 import React from 'react';
 import img from './image/cello.png';
 import './Home.css';
-import Review from '../Review/Review';
+import Reviews from '../Reviews/Reviews';
 
 const Home = () => {
+
     return (
         <div>
             <div className="row w-100 d-flex align-items-center justify-content-evenly">
@@ -21,6 +22,7 @@ const Home = () => {
             </div >
             <div>
                 <h3 className="mt-5">Customer Reviews</h3>
+                <Reviews></Reviews>
                 <button>See All Reviews</button>
             </div>
         </div>
