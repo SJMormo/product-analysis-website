@@ -1,0 +1,14 @@
+.modify h2 {
+    font-weight: 800;
+    font-size: 3.5rem;
+}
+.modify h1 {
+    font-weight: 800;
+    font-size: 5rem;
+    color: rgb(243, 172, 41);
+}
+.modify p {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 40%;
+}
