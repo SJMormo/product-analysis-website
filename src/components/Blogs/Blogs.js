@@ -14,7 +14,7 @@ const Blogs = () => {
             <Accordion.Item eventKey="1">
                 <Accordion.Header>What is Semantic Tag?</Accordion.Header>
                 <Accordion.Body>
-                    A React app can use the React Context API to generate global variables that can be passed around. The Context API allows you to transmit data through the component tree without having to explicitly provide props down at each level. Props are used to send data top-down (parent to child) in a typical React application, but this might be inconvenient. Context allows components to share values like these without having to pass a prop through each level of the tree directly.
+                    The tags or elements that clearly describes itself are called semantic tag. This means that the tag describes itself to both the browser and the developer. For instance from, table, article and so on. By seeing these tags we are able to feel its meaning.
                 </Accordion.Body>
             </Accordion.Item>
         </Accordion>
