@@ -15,7 +15,7 @@ const Home = () => {
     }
 
     return (
-        <div className=''>
+        <div>
             <div className="row d-flex w-100 align-items-center text-center">
                 <div className="col-md-8 col-sm-12 modify">
                     <h2 className="">Your Next Instrument</h2>
