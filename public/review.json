@@ -1,44 +1,44 @@
 [
     {
         "id": 1,
-        "name": "Mar",
-        "review": "Top Notch quality. Amazing Experience",
-        "rating": 241,
+        "name": "Howard Joel Wolowitz",
+        "review": "I purchased this instrument for my 5-year old daughter during the pandemic when we signed her up for online violin lessons (spring'2021). It sounds good and worked out.",
+        "rating": "5/5",
         "P_name": "Violin"
     },
     {
         "id": 2,
-        "name": "Apr",
-        "review": 200000,
-        "rating": 423,
+        "name": "Sheldon Cooper",
+        "review": "I've been playing cello for about 25 years and have played mostly school cellos and rentals and my own Hammond Ashley. Helicore strings are bright.",
+        "rating": "5/5",
         "P_name": "Cello"
     },
     {
         "id": 3,
-        "name": "May",
-        "review": 500000,
-        "rating": 726,
+        "name": "Amy Farrah Fowler",
+        "review": "I received this after a lot of research and was very excited to play. It is a bit heavy and takes a little time to figure out the installation",
+        "rating": "4.5/5",
         "P_name": "Piano"
     },
     {
         "id": 4,
-        "name": "Jun",
-        "review": 500000,
-        "rating": 529,
+        "name": "Penny Hofstadter",
+        "review": "The assembly was easy, the instructions were clear. Packaging was very good. Overall happy with the product. Perfect for a kid who is going to start learning.",
+        "rating": "4/5",
         "P_name": "Drums"
     },
     {
         "id": 5,
-        "name": "Jul",
-        "review": 600000,
-        "rating": 601,
+        "name": "Bernadette Rostenkowski",
+        "review": "I should have done a little more research before buying this product, so my negative experience with it is probably partly my fault",
+        "rating": "2.5/5",
         "P_name": "Keyboard"
     },
     {
         "id": 6,
-        "name": "Aug",
-        "review": 700000,
-        "rating": 670,
+        "name": "Rajesh Ramayan Koothrappali,",
+        "review": "A very good example of a 3/4 size classical guitar. I was quite pleased with the extras that come with it such as a bag, extra strings and especially an electronic tuner.",
+        "rating": "3.5/5",
         "P_name": "Guiter"
     }
 ]

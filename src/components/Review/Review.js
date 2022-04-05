@@ -7,9 +7,9 @@ const Review = (props) => {
         <Col>
             <Card>
                 <Card.Body>
-                    <Card.Title>Review of {P_name}</Card.Title>
+                    <Card.Title className="text-center">{name}</Card.Title>
                     <Card.Text>
-                        Reviewer Name: {name}
+                        Item: {P_name}
                     </Card.Text>
                     <Card.Text>
                         Review: {review}

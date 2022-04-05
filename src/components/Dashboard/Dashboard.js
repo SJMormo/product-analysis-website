@@ -1,18 +1,13 @@
-import React, { useEffect, useState } from 'react';
-import { CartesianGrid, Line, LineChart, XAxis, YAxis, Tooltip, ResponsiveContainer, AreaChart, Area } from 'recharts';
+import { CartesianGrid, Line, LineChart, XAxis, YAxis, Tooltip, AreaChart, Area } from 'recharts';
+import useData from '../../Hook/useData';
 
 const Dashboard = () => {
-    const [fetchData, setFetchData] = useState([]);
-    useEffect(() => {
-        fetch('data.json')
-            .then(res => res.json())
-            .then(data => setFetchData(data));
-    }, [])
+    const [fetchData, setFetchData] = useData([]);
     return (
-        <div className="d-flex justify-content-evenly mt-5">
-            <div>
-                <h4 className='mb-3'>Month Wise Sell</h4>
-                <LineChart width={600} height={300} data={fetchData} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
+        <div className="row mt-5 w-100">
+            <div className="col-md-6 col-sm-12">
+                <h4 className='mb-3 text-center'>Month Wise Sell</h4>
+                <LineChart className='mx-auto' width={600} height={300} data={fetchData} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
                     <Line type="monotone" dataKey="sell" stroke="#8884d8" />
                     <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
                     <XAxis dataKey="month" />
@@ -21,9 +16,9 @@ const Dashboard = () => {
                 </LineChart>
             </div>
 
-            <div>
-                <h4 className='mb-3'>Investment vs Revenue</h4>
-                <AreaChart
+            <div className="col-md-6 col-sm-12">
+                <h4 className='mb-3 text-center'>Investment vs Revenue</h4>
+                <AreaChart className='mx-auto'
                     width={600}
                     height={300}
                     data={fetchData}
