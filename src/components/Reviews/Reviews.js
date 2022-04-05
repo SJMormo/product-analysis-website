@@ -9,7 +9,7 @@ const Reviews = () => {
 
     return (
         <div>
-            <Row xs={1} md={2} className="g-4 w-100">
+            <Row xs={1} md={2} className="mt-4 g-4 w-75 mx-auto">
                 {
                     reviews.map(review =>
                         <Review

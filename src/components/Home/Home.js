@@ -1,9 +1,19 @@
 import React from 'react';
 import img from './image/cello.png';
 import './Home.css';
+import Review from '../Review/Review';
+import useReviews from '../../Hook/useReviews';
 import Reviews from '../Reviews/Reviews';
+import { Row } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+    const [reviews, setReviews] = useReviews({});
+
+    let navigate = useNavigate();
+    const reviewNavigate = () => {
+        navigate(`/reviews`);
+    }
 
     return (
         <div>
@@ -20,10 +30,19 @@ const Home = () => {
                     <img src={img} alt="" />
                 </div>
             </div >
-            <div>
+            <div className='pb-5'>
                 <h3 className="mt-5">Customer Reviews</h3>
-                <Reviews></Reviews>
-                <button>See All Reviews</button>
+                {/* <Reviews></Reviews> */}
+                <Row xs={1} md={3} className="g-4 w-75 mx-auto">
+                    {
+                        reviews.slice(3).map(review =>
+                            <Review
+                                key={review.id}
+                                review={review}
+                            ></Review>)
+                    }
+                </Row>
+                <button onClick={reviewNavigate} type="button" class="mt-3 btn btn-outline-secondary">See All Reviews</button>
             </div>
         </div>
     );
