@@ -2,8 +2,6 @@
 
 ## Live site link: [instrument-shop-sjmormo](https://instrument-shop-sjmormo.netlify.app/)
 
-****
-
 ## About website:
 * This is a website for shopping instruments.
 * In the Review section you will find all the reviews given by our customers.
